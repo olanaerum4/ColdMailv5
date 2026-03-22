@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(14,14,12,0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(14,14,12,0.3); }
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Table row hover */
+tr:hover td {
+  background: #faf9f7;
+}
+
+/* Input focus ring */
+input:focus, textarea:focus, select:focus {
+  border-color: #c8460a !important;
+  box-shadow: 0 0 0 3px rgba(200,70,10,0.08);
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+}
